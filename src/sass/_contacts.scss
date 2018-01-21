@@ -1,0 +1,35 @@
+.contacts_content{
+    p{
+        font-size: 2em;
+        text-align: center;
+        @media only screen and (max-width: 640px){
+            font-size: 24px;
+        }
+    }
+}
+.contacts_overall{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+        p{
+            max-width: 30%;
+            height: auto;
+            margin: 2% auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+}
+.contacts_icons{
+    text-align: center;
+    span{
+        a{
+            i{
+                color: gray;
+                font-size: 40px;
+                margin: 10px;
+            }
+        }
+    }
+}

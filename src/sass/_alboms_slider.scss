@@ -1,0 +1,62 @@
+.alboms_slide{
+    max-width: 82%;
+    margin: 0 auto;
+    @media only screen and (max-width: 420px){
+        max-width: 100%;
+    }
+    p{
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.fa-window-restore {
+    @media only screen and (max-width: 420px){
+        display: none;
+    }
+}
+.arrows{
+    height: 100vh;
+    width: 10%;
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    p{
+        color: #ffffff;
+        display: none;
+        .fa-chevron-left{
+            margin: 6px;
+            margin-right: 9px;
+        }
+        .fa-chevron-right{
+            margin: 6px;
+            margin-right: 6px;
+        }
+    }
+}
+._left{
+    left: 0;
+    p{
+        width: 30px;
+        height: 30px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        position: fixed;
+        left: 2%;
+        top:48%;
+    }
+ }
+._right{ right: 0;
+    p{
+        width: 30px;
+        height: 30px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        position: fixed;
+        right: 2%;
+        top:48%;
+    }
+}

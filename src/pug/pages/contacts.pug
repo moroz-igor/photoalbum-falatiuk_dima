@@ -1,0 +1,34 @@
+doctype html
+html(lang="zxx")
+    include ../modules/head
+    body
+        main
+            .header
+                include ../modules/drop_down
+                include ../modules/navigation
+            .contacts_content
+                h1 Контакти
+                .contacts_overall
+                    p
+                        img(src="images/main_gallery/kontact_me.jpg" alt="author")
+                p Україна м.Вінниця 
+                p +38(063) 590 - 75 - 07
+                .contacts_icons
+                    span 
+                        a(href="https://www.instagram.com/dima_fal/")
+                            i(class="fa  fa-instagram" aria-hidden="true")
+                    span            
+                        a(href="https://www.facebook.com/dimafalat")
+                            i(class="fa  fa-facebook-square" aria-hidden="true")
+                    span            
+                        a(href="https://vk.com/dima_falatyuk")
+                            i(class="fa fa-vk" aria-hidden="true")
+                    span            
+                        a(href="https://www.youtube.com/user/95Dimaz")
+                            i(class="fa  fa-youtube" aria-hidden="true")
+            
+            //- .footer
+                .horizon_line
+                include ../modules/footer
+        include ../modules/anchor 
+        include ../modules/scripts    

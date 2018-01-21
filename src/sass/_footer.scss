@@ -1,0 +1,39 @@
+
+footer{
+    padding: 25px 10px;
+    background-color: grey;
+    color: #ffffff;
+    @media only screen and (max-width: 750px){
+        display: block;
+    }
+    div{
+        max-width: 30%;
+        margin: auto;
+        @media only screen and (max-width: 750px){
+            max-width: 80%;
+            margin: 10px auto;
+        }
+
+        p{
+            font-size: 12px;
+            font-style: italic;
+            text-align: justify;
+            @media only screen and (max-width: 900px){
+                padding: 0 20px;
+            }
+        }
+    }
+    }
+.footer_icons{
+    display: flex;
+    justify-content : space-around;
+    align-items : center;
+    a{
+        margin: 5px 12px;
+        color:#ffffff;
+        i{
+          font-size: 35px;
+        }
+    }
+    a:hover{color:#3A3A3A}
+}

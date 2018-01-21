@@ -1,0 +1,28 @@
+doctype html
+html(lang="zxx")
+    include ../modules/head
+    body
+        main
+            .header
+                include ../modules/drop_down
+                include ../modules/navigation
+                h1 Портфоліо
+            .portfolio_content
+                mixin albom(number, src, name)
+                    .portfolio_albom
+                        div(id="portfolio_exemple_" + number)
+                            h3= name
+                        p
+                            a(href="albom" + number + ".html")
+                                img(src='images/portfolio_exemples/albom_ob_'+ src +'.jpg' alt='portfolio_exemple_' + number width="1920", height="1282")
+                +albom('1',  '1', 'Весілля Марини та Віталія')                
+                +albom('2',  '2', 'Весілля Ірина та Андрія')                
+                +albom('3',  '3', 'Весілля Валентини та Олексія')                
+                +albom('4',  '4', 'Love Story Євгенії та Сергія')                
+                +albom('5',  '5', 'Весілля Альони та Леоніда')                
+                +albom('6',  '6', 'Післявесільна зйомка Саші та Сергія')
+            .footer
+                .horizon_line
+                include ../modules/footer
+        include ../modules/anchor 
+        include ../modules/scripts    

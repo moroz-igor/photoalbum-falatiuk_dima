@@ -1,0 +1,59 @@
+.portfolio_content{
+    text-align: center;
+    padding: 30px 0;
+
+}
+h1{
+    text-align: center;
+}
+.time{
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto;
+    a{
+        font-size: 16px;
+        color: #535353;
+        font-weight: bold;
+        @media only screen and (max-width: 660px){
+            font-size: 10px;
+        }
+    }
+}
+.portfolio_albom{
+    width: 100%;
+    max-width: 30%;
+    margin: 6px 9px;
+    position: relative;
+    display: inline-table;
+    @media only screen and (max-width: 750px){
+        max-width: 49%;
+    }
+    @media only screen and (max-width: 660px){
+        max-width: 90%;
+    }
+    div{
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        padding: 2%;
+        display: none;
+        // display: block;
+
+        h3{
+            text-align: center;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 500;
+        }
+    }
+    p{
+        width: 100%;
+        height: auto;
+        background-color: #575757;
+        img{
+            width: 100%;
+            height: auto;
+            // opacity: 0.3;
+        }
+    }
+}

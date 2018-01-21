@@ -1,0 +1,39 @@
+doctype html
+html(lang="zxx")
+    include ../modules/head
+    body
+        main
+            .header
+                include ../modules/drop_down
+                include ../modules/navigation
+            .alboms_content
+                h1 Весілля Ірини та Андрія
+                article
+                mixin img-albom(number) 
+                    p   
+                        img(src="images/catalog_2/_slide_"+number+".jpg" alt="slide_"+number class="albom")
+                -var n = 10
+                -var amount = 49 + n
+                while n <= amount      
+                    +img-albom(n++)
+            .alboms_modal 
+            .alboms_modal_content 
+                .alboms_slide
+                    p
+                        img(src="images/catalog_2/_slide_10.jpg" alt="slide" class="albom")
+                .arrows(class="_left")
+                    p 
+                        i(class="fa fa-chevron-left") 
+                .arrows(class="_right")
+                    p
+                        i(class="fa fa-chevron-right")             
+                p(class="icons") 
+                    //- i(class="fa fa-window-maximize" aria-hidden="true")
+                    i(class="fa fa-window-restore" aria-hidden="true")
+                    i(class="fa fa-window-close-o" aria-hidden="true")                
+            .footer
+                .horizon_line
+                include ../modules/footer
+        include ../modules/anchor 
+        include ../modules/scripts
+        script(src ="js/slider.js")   
